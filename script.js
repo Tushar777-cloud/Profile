@@ -247,12 +247,11 @@
       });
     });
 
-  /* ---------- 10. DOWNLOAD RESUME (graceful fallback) ---------- */
+  /* ---------- 10. DOWNLOAD RESUME (linked to Tushar_Resume.pdf) ---------- */
   const resumeBtn = document.getElementById("resume-btn");
   if (resumeBtn) {
-    resumeBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      flashHint("Resume is not attached yet — reach out to request it!");
+    resumeBtn.addEventListener("click", function () {
+      flashHint("Downloading resume…");
     });
   }
 
